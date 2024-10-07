@@ -1,0 +1,140 @@
+#page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.responsive-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    gap: 5%;
+}
+
+.responsive-data {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.navbar {
+    display: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 10px;
+}
+
+.grid-container>div {
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+}
+
+.box-content {
+    width: fit-content;
+    min-width: 80%;
+    height: auto;
+    width: fit-content;
+    border-radius: 10px 10px 10px 10px;
+    border: .1px solid grey;
+    color: #c3c3c3;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding-bottom: 20px;
+    background-color: #131313;
+}
+
+.item-content {
+    width: 100%;
+    border: .1px solid grey;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2px;
+}
+
+.responsive-menu-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1%
+}
+
+.responsive-menu-footer>a {
+    /* height: 20px; */
+    line-height: 20px;
+    vertical-align: middle;
+    color: #f4ce59;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 1025px) {
+    .box-content {
+        width: 100%;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbar {
+        display: block;
+    }
+
+    .responsive-wrapper {
+        display: none;
+    }
+
+    .response-header {
+        display: none;
+    }
+
+    .response-header>div {
+        width: 100%;
+    }
+
+    .grid-container {
+        grid-template-columns: auto auto auto
+    }
+
+    .responsive-menu>li {
+        width: 100%
+    }
+
+    .responsive-data {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .responsive-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .responsive-menu-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
